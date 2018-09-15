@@ -2,12 +2,83 @@
 
 	<title>My website!</title>
 
+	<style type="text/css">
+		a:hover{
+			color: orange;
+		}
+		body{
+			margin: 0;
+		}
+		#top{
+			width: 30%;
+			height: 70%;
+		}
+		#bottom{
+			width: 50%;
+			height: 50%;
+		}
+		.colored{
+			font-size: 100px;
+			color: magenta;
+		}
+		th.header{
+			border: 3px solid black;
+		}
+		table {
+    	border-collapse: collapse;
+		}	
+
+
+	</style>
+
+
+	<script type="text/javascript">
+		
+		var doit = new Audio('doit.mp3');
+
+
+
+
+
+	</script>
+
+
 </head>
 
 
 <body>
-	
 
-	<img src="Kevin Lin professional photo.PNG">
+
+<table>
+	
+	<tr>
+
+		<th class="header">CS61A</th>
+		<th class="header">Life</th>
+		<th class="header"><button onclick="doit.play()">Death</button></th>
+
+	</tr>
+
+</table>
+
+
+	<a href="Calculus James Stewart Solutions.pdf"> <img src="Kevin Lin professional photo.PNG" width="200em"> </a>
+
+
+	<table style = "border: 10px dotted red">
+		<tr>
+			<th class="colored"> Food </th>
+		</tr>
+		<tr>
+			<td> banana </td>
+		</tr>
+		<tr>
+			<td> <a href="secret/secretpage.html">apple</a> </td>
+		</tr>
+
+	</table>
+
+	<div id="top" style="border: 30px solid yellow; background-color: yellow"> <p class="colored"> Wow a div! </p> </div>
+	<div id="bottom" style="border: 30px solid purple; background-color: purple"> <p> Wow a div! </p> </div>
 
 </body>
