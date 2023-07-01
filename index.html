@@ -58,6 +58,49 @@
 
                             <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
                                 <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <!-- <div class="one">
+                                        <div class="two" id='dualrefl_image'>
+                                            <img src='images/t2m.png' width="160"></div>
+                                        <img src='images/t2m.png' width="160">
+                                    </div> -->
+                                    <div class="one">
+                                        <div class="two" id="dualrefl_image">
+                                          <video src="videos/t2m.mp4" width="160" autoplay loop muted></video>
+                                        </div>
+                                        <video src="videos/t2m.mp4" width="160" autoplay loop muted></video>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function dualrefl_start() {
+                                          document.getElementById('dualrefl_image').style.opacity = "1";
+                                        }
+                        
+                                        function dualrefl_stop() {
+                                          document.getElementById('dualrefl_image').style.opacity = "0";
+                                        }
+                                        dualrefl_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://sites.google.com/stanford.edu/text2motion">
+                                        <papertitle>Text2Motion: From Natural Language Instructions to Feasible Plans</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Kevin Lin</strong>,
+                                    <a href="https://www.chrisagia.com">Christopher Agia</a>,
+                                    <a href="https://cs.stanford.edu/~takatoki/">Toki Migimatsu</a>,
+                                    <a href="https://web.stanford.edu/~pavone/">Marco Pavone</a>,
+                                    <a href="https://web.stanford.edu/~bohg/ ">Jeannette Bohg</a>,
+                                    <br>
+                                    <p><a href="https://microsoft.github.io/robotics.pretraining.workshop.icra/">ICRA '23 Workshop on Pretraining for Robotics</a></p>
+                                <p>
+                                    We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. 
+                                    Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. 
+                                </p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
                                     <div class="one">
                                         <div class="two" id='dualrefl_image'>
                                             <img src='images/rfe_camera_on_camera.jpg' width="160"></div>
