@@ -134,6 +134,40 @@
                                     for evaluating view planning algorithms for radiance field reconstructions and propose a simple solution to the view planning problem based on <i>radiance field ensembles</i>.
                                 </p>
                                 </td>
+                            </tr>
+
+                            <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='dualrefl_image'>
+                                            <img src='images/rfe_camera_on_camera.jpg' width="160"></div>
+                                        <img src='images/rfe_camera_on_camera.jpg' width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                        function dualrefl_start() {
+                                          document.getElementById('dualrefl_image').style.opacity = "1";
+                                        }
+                        
+                                        function dualrefl_stop() {
+                                          document.getElementById('dualrefl_image').style.opacity = "0";
+                                        }
+                                        dualrefl_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://imrss2022.github.io/contributions/lin.pdf">
+                                        <papertitle>Active View Planning for Radiance Fields</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Kevin Lin</strong>,
+                                    <a href="https://brentyi.com/ ">Brent Yi</a>,
+                                    <br>
+                                    <p><a href="https://imrss2022.github.io/">RSS '22 Workshop on Implicit Representations for Robot Manipulation</a></p>
+                                <p>
+                                    We motivate, discuss, and present a study on the problem of view planning for radiance fields. We introduce a benchmark, <a href="https://github.com/kevin-thankyou-lin/active-3d-gym">active-3d-gym</a>,
+                                    for evaluating view planning algorithms for radiance field reconstructions and propose a simple solution to the view planning problem based on <i>radiance field ensembles</i>.
+                                </p>
+                                </td>
                             </tr> 
                             
                             <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
