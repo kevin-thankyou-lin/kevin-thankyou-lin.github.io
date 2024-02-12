@@ -27,7 +27,7 @@
                                     </p>
                                     <p>MS Computer Science at Stanford, advised by <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>; previously, EECS at UC Berkeley. I did research at <a href="https://waabi.ai/">Waabi</a>, advised by Raquel Urtasun, and at 
                                         <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence Research </a> with members of <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel's</a> Robot Learning Lab. 
-                                        I also do research with <a href="https://smlbansal.github.io/">Somil Bansal</a>.
+                                        I also did research with <a href="https://smlbansal.github.io/">Somil Bansal</a>.
                                     </p>
 
                                     <p>If you're interested in collaborating or getting into robotics, feel free to email!</p>
@@ -50,7 +50,7 @@
                                 <td style="padding:20px;width:100%;vertical-align:middle">
                                     <heading>Research</heading>
                                     <p>
-                                        I'm delighted by intelligent entities of all kinds. In particular, I'm interested in designing the brains of robots so they operate safely and effectively in the real world.
+                                        I'm delighted by intelligent entities of all kinds. In particular, I develop general purpose robotic manipulation methods so that robots operate safely and effectively in the real world.
                                     </p>
                                 </td>
                             </tr>
@@ -61,11 +61,41 @@
 
                             <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
                                 <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <!-- <div class="one">
-                                        <div class="two" id='dualrefl_image'>
-                                            <img src='images/t2m.png' width="160"></div>
-                                        <img src='images/t2m.png' width="160">
-                                    </div> -->
+                                    <div class="one" style="margin-top: -70px;">
+                                        <div class="two" id="dualrefl_image">
+                                          <video src="videos/cp-dp.mp4" width="160" autoplay loop muted></video>
+                                        </div>
+                                        <video src="videos/cp-dp.mp4" width="160" autoplay loop muted></video>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function dualrefl_start() {
+                                          document.getElementById('dualrefl_image').style.opacity = "1";
+                                        }
+                        
+                                        function dualrefl_stop() {
+                                          document.getElementById('dualrefl_image').style.opacity = "0";
+                                        }
+                                        dualrefl_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://sites.google.com/stanford.edu/text2motion">
+                                        <papertitle>Consistency Policy: Accelerated Visuomotor Policies via Consistency Trajectory Distillation</papertitle>
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p>In submission: Robotics Science and Systems '24<br></p>
+                                <p>
+                                    We propose Consistency Policy, a faster and similarly powerful alternative to Diffusion Policy for learning visuomotor robotic manipulation policies. 
+                                    By virtue of its fast inference speed, Consistency Policy can enable low latency decision making in resource-constrained robotic setups. 
+                                    We compare Consistency Policy with Diffusion Policy and other related speed-up methods across 6 simulation tasks as well as one real-world task where we demonstrate inference on a laptop GPU. 
+                                    For all these tasks, Consistency Policy speeds up inference by an order of magnitude compared to the fastest alternative method and maintains competitive success rates. 
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
                                     <div class="one">
                                         <div class="two" id="dualrefl_image">
                                           <video src="videos/t2m.mp4" width="160" autoplay loop muted></video>
