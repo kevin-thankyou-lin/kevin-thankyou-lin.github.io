@@ -50,7 +50,18 @@
                                 <td style="padding:20px;width:100%;vertical-align:middle">
                                     <heading>Research</heading>
                                     <p>
-                                        I'm delighted by intelligent entities of all kinds. In particular, I develop general purpose robotic manipulation methods so that robots operate safely and effectively in the real world.
+                                        I'm interested in developing general purpose robots. 
+                                    </p>
+                                    <p>
+                                        Previously, I have leveraged foundation models for robust and verified 
+                                        long horizon planning for robot manipulation from natural language instructions.
+
+                                        Currently, I'm developing a general purpose robotic manipulation framework so that robots can achieve three nines of reliability on tasks when provided a few demonstrations.
+                                    </p>
+                                    <p>
+                                        In the future, I aim to develop a general purpose robotics foundation model that can be fine tuned for specific robot embodiments and settings.
+                                        I plan to achieve this goal by leveraging a diverse range of data sources --- real world robot data, simulation data, human videos --- and using
+                                        methods from machine learning, vision, graphics, and robotics.
                                     </p>
                                 </td>
                             </tr>
@@ -80,8 +91,12 @@
                                 </td>
                                 <td style="padding:20px;width:75%;vertical-align:middle">
                                         <papertitle>Consistency Policy: Accelerated Visuomotor Policies via Consistency Trajectory Distillation</papertitle>
-                                    <br>
-                                    <br>
+                                        <br>
+                                        <a href="https://www.linkedin.com/in/aaditya-prasad/">Aaditya Prasad</a>,
+                                        <strong>Kevin Lin</strong>,
+                                        <a href="https://alexzhou907.github.io/">Linqi Zhou</a>,
+                                        <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>,
+                                        <br>
                                     <p>In submission: <a href="https://roboticsconference.org/">Robotics Science and Systems '24</a><br></p>
                                 <p>
                                     We propose Consistency Policy, a faster and similarly powerful alternative to Diffusion Policy for learning visuomotor robotic manipulation policies. 
@@ -89,6 +104,45 @@
                                     We compare Consistency Policy with Diffusion Policy and other related speed-up methods across 6 simulation tasks as well as one real-world task where we demonstrate inference on a laptop GPU. 
                                     For all these tasks, Consistency Policy speeds up inference by an order of magnitude compared to the fastest alternative method and maintains competitive success rates. 
                                     </p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='dualrefl_image'>
+                                            <img src='images/droid.gif' width="160"></div>
+                                        <img src='images/droid.gif' width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                        function dualrefl_start() {
+                                          document.getElementById('dualrefl_image').style.opacity = "1";
+                                        }
+                        
+                                        function dualrefl_stop() {
+                                          document.getElementById('dualrefl_image').style.opacity = "0";
+                                        }
+                                        dualrefl_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://imrss2022.github.io/contributions/lin.pdf">
+                                        <papertitle>DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset</papertitle>
+                                    </a>
+                                    <br>
+                                    <a href="https://www.linkedin.com/in/alexander-khazatsky-b98841149/">Alexander Khazatsky*</a>,
+                                    <a href="https://kpertsch.github.io/">Karl Pertsch*</a>,...,
+                                    <strong>Kevin Lin</strong>, ...,
+                                    <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
+                                    <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>,
+                                    <br>
+                                    <p>In submission: <a href="https://roboticsconference.org/">Robotics Science and Systems '24</a><br></p>
+                                <p>
+                                    We introduce DROID, the most diverse robot manipulation dataset to date. It contains 76k demonstration trajectories or 350 hours of interaction data, 
+                                    collected across 564 scenes and 84 tasks by 50 data collectors in North America, Asia, and Europe over the course of 12 months. 
+                                    We demonstrate that training with DROID leads to policies with higher performance and improved generalization ability. 
+                                    We open source the full dataset, policy learning code, and a detailed guide for reproducing our robot hardware setup.
+                                </p>
                                 </td>
                             </tr>
 
