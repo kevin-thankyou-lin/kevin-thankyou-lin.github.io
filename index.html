@@ -25,7 +25,8 @@
                                     <p style="text-align:center">
                                         <name>Kevin Lin</name>
                                     </p>
-                                    <p>MS Computer Science at Stanford, advised by <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>; previously, EECS at UC Berkeley. I did research at <a href="https://waabi.ai/">Waabi</a>, advised by Raquel Urtasun, and at 
+                                    <p>PhD Computer Science at UT Austin, advised by <a href="https://yukezhu.me/">Yuke Zhu</a>. Previously, MS Computer Science at Stanford, advised by <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>; 
+                                        EECS at UC Berkeley. I did research at <a href="https://waabi.ai/">Waabi</a>, advised by Raquel Urtasun, and at 
                                         <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence Research </a> with members of <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel's</a> Robot Learning Lab. 
                                         I also did research with <a href="https://smlbansal.github.io/">Somil Bansal</a>.
                                     </p>
@@ -33,7 +34,7 @@
                                     <p>If you're interested in collaborating or getting into robotics, feel free to email!</p>
 
                                     <p style="text-align:center">
-                                        <a href="mailto:kevin.lin@cs.stanford.edu">Email</a> &nbsp/&nbsp
+                                        <a href="mailto:kevin.lin@cs.utexas.edu">Email</a> &nbsp/&nbsp
                                         <a href="https://www.linkedin.com/in/kevin-thankyou-lin/">LinkedIn</a> &nbsp/&nbsp
                                         <a href="https://github.com/kevin-thankyou-lin">Github</a> &nbsp/&nbsp
                                         <a href="https://scholar.google.com/citations?hl=en&user=CTxv7koAAAAJ">Google Scholar</a>
@@ -75,6 +76,45 @@
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                     <div class="one" style="margin-top: 0px;">
                                         <div class="two" id="dualrefl_image">
+                                          <video src="videos/dexmg.mp4" width="160" autoplay loop muted></video>
+                                        </div>
+                                        <video src="videos/dexmg.mp4" width="160" autoplay loop muted></video>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function dualrefl_start() {
+                                          document.getElementById('dualrefl_image').style.opacity = "1";
+                                        }
+                        
+                                        function dualrefl_stop() {
+                                          document.getElementById('dualrefl_image').style.opacity = "0";
+                                        }
+                                        dualrefl_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                        <papertitle>DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning</papertitle>
+                                        <br>
+                                        <strong>Kevin Lin*</strong>,
+                                        <a href="https://zhenyujiang.me/">Zhenyu Jiang*</a>,
+                                        <a href="https://xieleo5.github.io/">Yuqi Xie*</a>,
+                                        <a href="https://www.zhenjiaxu.com/">Zhenjia Xu</a>,
+                                        <a href="https://wkwan7.github.io/">Weikang Wan</a>,
+                                        <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar†</a>,
+                                        <a href="https://jimfan.me/">Jim Fan†</a>,
+                                        <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu†</a>
+                                        <br>
+                                        <br>
+                                        <em>In submission</em>, 2024 &nbsp
+                                    <p>
+                                        We introduce DexMimicGen, a large-scale automated data generation system that synthesizes trajectories from a handful of human demonstrations for humanoid robots with dexterous hands.
+                                        We leverage DexMimicGen to generate data and deploy a trained policy on a real-world humanoid can sorting task.
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one" style="margin-top: 0px;">
+                                        <div class="two" id="dualrefl_image">
                                           <video src="videos/cp-dp.mp4" width="160" autoplay loop muted></video>
                                         </div>
                                         <video src="videos/cp-dp.mp4" width="160" autoplay loop muted></video>
@@ -98,7 +138,7 @@
                                         <a href="https://alexzhou907.github.io/">Linqi Zhou</a>,
                                         <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>
                                         <br>
-                                    <p>In submission: <a href="https://roboticsconference.org/">Robotics Science and Systems, 2024</a><br></p>
+                                    <p><a href="https://roboticsconference.org/">Robotics Science and Systems, 2024</a><br></p>
                                 <p>
                                     We propose Consistency Policy, a faster and similarly powerful alternative to Diffusion Policy for learning visuomotor robotic manipulation policies. 
                                     We compare Consistency Policy with Diffusion Policy and other related speed-up methods across 6 simulation tasks as well as one real-world task where we demonstrate inference on a laptop GPU. 
@@ -136,7 +176,7 @@
                                     <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
                                     <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
                                     <br>
-                                    <p>In submission: <a href="https://roboticsconference.org/">Robotics Science and Systems, 2024</a><br></p>
+                                    <p><a href="https://roboticsconference.org/">Robotics Science and Systems, 2024</a><br></p>
                                 <p>
                                     We introduce DROID, the most diverse robot manipulation dataset to date. It contains 76k demonstration trajectories or 350 hours of interaction data, 
                                     collected across 564 scenes and 84 tasks by 50 data collectors in North America, Asia, and Europe over the course of 12 months. 
