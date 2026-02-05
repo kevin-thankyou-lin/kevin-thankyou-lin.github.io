@@ -73,6 +73,41 @@
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
 
+                            <tr onmouseout="groot_stop()" onmouseover="groot_start()" class="spaceUnder">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id="groot_image">
+                                            <img src="images/gr00t_n1.jpg" width="160"></div>
+                                        <img src="images/gr00t_n1.jpg" width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                        function groot_start() {
+                                          document.getElementById('groot_image').style.opacity = "1";
+                                        }
+                        
+                                        function groot_stop() {
+                                          document.getElementById('groot_image').style.opacity = "0";
+                                        }
+                                        groot_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://developer.nvidia.com/isaac/gr00t"><papertitle>GR00T N1/N1.5/N1.6: Open Foundation Models for Generalist Humanoid Robots</papertitle></a> 
+                                    <br>
+                                    NVIDIA GR00T Team
+                                    <br><br>
+                                    <a href="https://arxiv.org/abs/2503.14734"><em>Technical Report</em>, 2025</a> &nbsp /&nbsp
+                                    <a href="https://developer.nvidia.com/blog/"><em>NVIDIA Blog</em></a> &nbsp /&nbsp
+                                    <a href="https://techcrunch.com/"><em>TechCrunch</em></a> &nbsp /&nbsp
+                                    <a href="https://www.theverge.com/"><em>The Verge</em></a>
+                                    <p>
+                                        We introduce GR00T N1, N1.5, and N1.6, open foundation models for humanoid robots. 
+                                        These Vision-Language-Action (VLA) models feature an end-to-end dual-system architecture: the vision-language module (System 2) interprets the environment, while the diffusion transformer (System 1) generates real-time motor actions.
+                                        GR00T models outperform state-of-the-art imitation learning baselines on standard simulation benchmarks across multiple robot embodiments.
+                                    </p>
+                                </td>
+                            </tr>
+
                             <tr onmouseout="cpgen_stop()" onmouseover="cpgen_start()">
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                     <div class="one" style="margin-top: 0px;">
@@ -110,38 +145,6 @@
                                     <p>
                                         We present CP-Gen, a synthetic data generation framework that uses a single expert trajectory to generate 1000s of robot demonstrations containing novel object geometries and poses. 
                                         These generated demonstrations are used to train closed-loop visuomotor policies that transfer zero-shot from simulation to the real world.
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="groot_stop()" onmouseover="groot_start()" class="spaceUnder">
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="one">
-                                        <div class="two" id="groot_image">
-                                            <img src="images/gr00t_n1.jpg" width="160"></div>
-                                        <img src="images/gr00t_n1.jpg" width="160">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function groot_start() {
-                                          document.getElementById('groot_image').style.opacity = "1";
-                                        }
-                        
-                                        function groot_stop() {
-                                          document.getElementById('groot_image').style.opacity = "0";
-                                        }
-                                        groot_stop()
-                                    </script>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="https://developer.nvidia.com/isaac/gr00t"><papertitle>GR00T N1: An Open Foundation Model for Generalist Humanoid Robots</papertitle></a> 
-                                    <br>
-                                    NVIDIA GR00T Team
-                                    <br><br>
-                                    <a href="https://arxiv.org/abs/2503.14734"><em>Technical Report</em>, 2025</a> &nbsp
-                                    <p>
-                                        We introduce GR00T N1, an open foundation model for humanoid robots. 
-                                        This Vision-Language-Action (VLA) model features an end-to-end dual-system architecture: the vision-language module (System 2) interprets the environment, while the diffusion transformer (System 1) generates real-time motor actions.
-                                        GR00T N1 outperforms state-of-the-art imitation learning baselines on standard simulation benchmarks across multiple robot embodiments.
-                                    </p>
                                 </td>
                             </tr>
 
